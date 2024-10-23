@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fancy Fit</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../css/tools.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- JS -->
+  </head>
+  <body>
+    <!-- Beginning of Body -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>Fancy</span> Fit</a>
+
+      <div class="navbar-toggle">
+        <a href="../index.html" id="home-toggle">Home</a>
+        <a href="../pages/about.html" id="about-toggle">About Us</a>
+        <a href="../pages/workouts.html" id="workouts-toggle">Workouts</a>
+        <a href="#tools" id="tools-toggle">Tools</a>
+      </div>
+
+      <div class="navbar-ham">
+        <a id="ham-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="tools">
+      <main class="content">
+        <h1>Prepare Yourself!</h1>
+        <p>Calculate your calories using our Calorie Calculator Tool!</p>
+        <form id="calorie-form" class="calorie-calculator">
+          <div class="form-group">
+            <label for="age">Age (15-80):</label>
+            <input type="number" id="age" required />
+          </div>
+          <div class="form-group">
+            <label>Gender:</label>
+            <div>
+              <input
+                type="radio"
+                id="male"
+                name="customRadioInline1"
+                value="male"
+                required
+              />
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                id="female"
+                name="customRadioInline1"
+                value="female"
+                required
+              />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required />
+          </div>
+          <div class="form-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required />
+          </div>
+          <div class="form-group">
+            <label for="list">Activity Level:</label>
+            <select id="list" required>
+              <option value="1">Sedentary (little or no exercise)</option>
+              <option value="2">
+                Lightly active (light exercise/sports 1-3 days/week)
+              </option>
+              <option value="3">
+                Moderately active (moderate exercise/sports 3-5 days/week)
+              </option>
+              <option value="4">
+                Very active (hard exercise/sports 6-7 days a week)
+              </option>
+              <option value="5">
+                Super active (very hard exercise/sports & physical job)
+              </option>
+            </select>
+          </div>
+          <button type="submit" class="cta">Calculate</button>
+        </form>
+        <div id="loading" class="loading-text" style="display: none">
+          Loading...
+        </div>
+        <div id="results" class="result-calories" style="display: none">
+          <h2 class="result-text">Total calories needed each day:</h2>
+          <input type="text" id="total-calories" class="result-num" readonly />
+        </div>
+      </main>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-div">
+        <div class="project-desc">
+          <p>
+            This project was created to fulfill the assignment for the course
+            II3140 Web and Mobile Application Development.
+          </p>
+        </div>
+
+        <div class="nama-nim-kampus">
+          <p id="name-nim">Irfan Musthofa - 18222056</p>
+          <p id="prodi">Sistem dan Teknologi Informasi</p>
+          <p id="kampus">Institut Teknologi Bandung</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Body -->
+
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>
