@@ -93,7 +93,7 @@ body {
   min-height: 250vh;
   display: flex;
   padding-top: 20rem;
-  background-image: url("/../../img/img1.jpg");
+  background-image: url("./../../img/img1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
