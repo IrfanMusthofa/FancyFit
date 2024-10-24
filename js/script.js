@@ -124,3 +124,27 @@ function errorMessage(error) {
   document.getElementById("loading").style.display = "none";
   alert(error);
 }
+document.getElementById("bmi-form").addEventListener("submit", function (e) {
+  document.getElementById("bmi-results").style.display = "none";
+  document.getElementById("bmi-loading").style.display = "block";
+
+  setTimeout(calculateBMI, 2000);
+
+  e.preventDefault();
+});
+
+function calculateBMI() {
+  const weight = document.getElementById("bmi-weight").value;
+  const height = document.getElementById("bmi-height").value;
+  const bmiValue = document.getElementById("bmi-value");
+
+  if (weight === "" || height === "" || weight <= 0 || height <= 0) {
+    errorMessage("Please make sure the values you entered are correct");
+  } else {
+    const bmi = (weight / (height / 100) ** 2).toFixed(2);
+    bmiValue.value = bmi;
+
+    document.getElementById("bmi-results").style.display = "block";
+    document.getElementById("bmi-loading").style.display = "none";
+  }
+}

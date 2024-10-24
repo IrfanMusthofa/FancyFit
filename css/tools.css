@@ -169,6 +169,37 @@ body {
 .hero .content .result-calories {
   color: var(--secondary);
 }
+
+.bmi-calculator {
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  padding: 3rem;
+  margin-top: 2rem;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.39);
+  color: var(--bg);
+  font-size: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.result-bmi {
+  background-color: var(--result-bg); /* Red background */
+  border-radius: 20px; /* Big rounded box */
+  padding: 2rem;
+  margin-top: 2rem;
+  backdrop-filter: blur(8px); /* Blurred background */
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#bmidesc {
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: var(--bg);
+  font-weight: normal;
+}
 /* Footer */
 
 .footer {

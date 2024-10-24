@@ -26,12 +26,12 @@
 
     <!-- Navbar -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo"><span>Fancy</span> Fit</a>
+      <a href="../index.html" class="navbar-logo"><span>Fancy</span> Fit</a>
 
       <div class="navbar-toggle">
         <a href="../index.html" id="home-toggle">Home</a>
         <a href="../pages/about.html" id="about-toggle">About Us</a>
-        <a href="../pages/workouts.html" id="workouts-toggle">Workouts</a>
+        <a href="./workouts/workouts.html" id="workouts-toggle">Workouts</a>
         <a href="#tools" id="tools-toggle">Tools</a>
       </div>
 
@@ -44,8 +44,11 @@
     <section class="hero" id="tools">
       <main class="content">
         <h1>Prepare Yourself!</h1>
-        <p>Calculate your calories using our Calorie Calculator Tool!</p>
+        <p>
+          Calculate your calories using our Calorie and BMI Calculator Tool!
+        </p>
         <form id="calorie-form" class="calorie-calculator">
+          <h2>Calorie Calculator</h2>
           <div class="form-group">
             <label for="age">Age (15-80):</label>
             <input type="number" id="age" required />
@@ -105,6 +108,26 @@
         <div id="results" class="result-calories" style="display: none">
           <h2 class="result-text">Total calories needed each day:</h2>
           <input type="text" id="total-calories" class="result-num" readonly />
+        </div>
+
+        <form id="bmi-form" class="bmi-calculator">
+          <h2>BMI Calculator</h2>
+          <div class="form-group">
+            <label for="bmi-weight">Weight (kg):</label>
+            <input type="number" id="bmi-weight" required />
+          </div>
+          <div class="form-group">
+            <label for="bmi-height">Height (cm):</label>
+            <input type="number" id="bmi-height" required />
+          </div>
+          <button type="submit" class="cta">Calculate BMI</button>
+        </form>
+        <div id="bmi-loading" class="loading-text" style="display: none">
+          Loading...
+        </div>
+        <div id="bmi-results" class="result-bmi" style="display: none">
+          <h2 class="result-text">Your BMI:</h2>
+          <input type="text" id="bmi-value" class="result-num" readonly />
         </div>
       </main>
     </section>
