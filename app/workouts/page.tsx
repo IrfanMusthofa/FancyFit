@@ -74,7 +74,7 @@ const workouts = async () => {
         >
           <button type="button">Add your workout!</button>
         </Link>
-        <h3 className="mb-32 text-2xl font-bold text-white drop-shadow-md text-center">
+        <h3 className="mb-8 text-2xl font-bold text-white drop-shadow-md text-center">
           Welcome, {user.firstName}! <br />
           Here are your favorite workouts.
         </h3>
