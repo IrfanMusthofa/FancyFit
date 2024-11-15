@@ -11,7 +11,7 @@ export default function Home() {
           Get fit with our workout programs and tools!
         </p>
         <Link
-          href="/addworkout"
+          href="/bodymap"
           className="flex-center w-1/6 rounded-full bg-primary-100 px-4 py-2 font-bold text-white hover:bg-primary-500 focus:outline-none"
         >
           <button type="button">Get Fit!</button>
