@@ -2,9 +2,9 @@
 
 import { useUser } from "@clerk/clerk-react";
 import React, { useEffect, useState } from "react";
-import { updateUserData } from "../workouts/page";
+import { updateUserData } from "../../lib/dbHelper";
 import { db } from "../../lib/db";
-import { getAllWorkoutData } from "../workouts/page";
+import { getAllWorkoutData } from "../../lib/dbHelper";
 const workoutsData = [
   "Abdominals",
   "Biceps",
