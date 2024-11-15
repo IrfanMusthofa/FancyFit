@@ -3,7 +3,7 @@ Created by Irfan Musthofa (18222056)
 
 ## Fancy Fit
 
-You can visit https://fancy-fit.vercel.app/ or run it locally (signed-out) by:
+You can visit https://fancy-fit.vercel.app/ or run it locally (with no authentication) by:
 
 First, make sure you have Node.js v22.11.0 installed
 
@@ -13,7 +13,7 @@ Then install all dependencies by running this command:
 npm install
 ```
 
-Last, run this command and open http://localhost:3000 with your browser
+Last but not least, run this command and open http://localhost:3000 with your browser
 
 ```bash
 npm run dev
